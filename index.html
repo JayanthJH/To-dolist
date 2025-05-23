@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Left side - Tasks -->
+        <div class="tasks-side">
+            <div class="header">
+                <div class="time">9:41</div>
+                <div class="current-date">23-05-2025</div>
+            </div>
+            
+            <div class="task-input-container">
+                <input type="text" id="new-task" placeholder="Add a new task...">
+                <button id="add-btn">+</button>
+            </div>
+            
+            <ul id="task-list">
+                <li class="task-item">
+                    <input type="checkbox" class="task-checkbox">
+                    <span class="task-text">Drink 8 glasses of water</span>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" class="task-checkbox">
+                    <span class="task-text">Edit the PDF</span>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" class="task-checkbox">
+                    <span class="task-text">Drink milk</span>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Right side - Calendar -->
+        <div class="calendar-side">
+            <div class="header">
+                <div class="time"></div>
+                <h1>Calendar</h1>
+            </div>
+            
+            <div class="week-days">
+                <span>WED 25</span>
+                <span class="active">THU 26</span>
+                <span>FRI 27</span>
+                <span>SAT 28</span>
+                <span>SUN 29</span>
+            </div>
+            
+            <div class="schedule">
+                <div class="time-slot">
+                    <span class="time">6:00</span>
+                    <span class="task">Drink 8 glasses of water</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">7:00</span>
+                    <span class="task">Get a notebook</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">10:00</span>
+                    <span class="task">Work</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
